@@ -1,0 +1,127 @@
+/*GLOBAL*/
+body{
+    background-color: #767676;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+.header{
+    background-color: #32312F;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+}
+
+.title-header img{
+    height: 60px;
+    position: absolute;
+    left: 200px;
+    top: 15px;
+}
+
+.title-header span{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 270px;
+    letter-spacing: 0.15em;
+}
+
+.nav {
+    float: right;
+}
+.nav ul {
+    margin: 0;
+}
+.nav li{
+    display: inline-block;
+    padding: 20px;
+    padding: 25px 40px 0px 20px;
+    margin-right: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* Animation HOVER mouse HEADER  */
+
+ul { 
+    margin: 150px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: inline-block;
+    text-align: center;
+  }
+
+li { 
+    /* display: table-cell;  */
+    display: inline-block;
+    position: relative; 
+    padding: 15px 0;
+  }
+
+.nav a {
+    color: #fff;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+.nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #D9A404;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 20px;
+      }
+  }
+
+/* CONTEUDO */
+.showcase{
+    height: 834px;
+    width: 100%;
+    background-color: #767676;
+}
+
+
+/* FOOTER */
+.footer{
+    background-color: #232323;
+    height: 100px;
+    /* padding-top: 30px; */
+    border-top: #D9A404 solid 3px;
+    /* position: absolute; */
+}
+
+.footer-bottom span{
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+}
+
+
+
+.footer a:hover{
+    color: #D9A404;
+}
+  
