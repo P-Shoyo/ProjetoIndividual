@@ -14,6 +14,7 @@
 * JS
 
 ## Special Thanks
+To my dog, the love of my life ♥ 
 
 ---
 **Welcome to my Project!!**
