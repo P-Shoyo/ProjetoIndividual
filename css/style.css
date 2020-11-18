@@ -112,6 +112,8 @@ li {
     /* position: absolute; */
 }
 
+
+
 .footer-bottom span{
     color: white;
     position: absolute;
@@ -125,3 +127,27 @@ li {
     color: #D9A404;
 }
   
+.footer-top{
+    background-color: #232323;
+    height: 300px ;
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+    margin: 0;
+    border-bottom: #D9A404 solid 3px;
+}
+
+.ellipse{
+    background-color: #767676;
+    /* background-color: white; */
+    height: 250px;
+    width: 500px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    right: 15%;
+}
+
+.ellipse img{
+    height: 230px;
+}
