@@ -8,7 +8,7 @@
     <!-- Library CSS Animation-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- CSS FONTAWESOME -->
-    <!-- <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -29,11 +29,19 @@
             <div class="secret1">
                 <img src="img/me dog.png" alt="">
             </div>
-            <a href="#section2"><img class="jello-horizontal" src="img/down-arrow.svg" alt="arrowdown"></a>
+            <a href="#section2"><img onclick="effecttext()" class="jello-horizontal" src="img/down-arrow.svg" alt="arrowdown"></a>
         </div>
 
         <div class="sec2" id="section2">
             <div class="content2">
+                <h3 id="text" class="text-focus-in">Mangá</h3>
+                <p class="text-focus-in">Em japonês, o termo <span>'manga'</span>  se refere a qualquer tipo de desenho, seja ele animado ou em quadrinhos. É composto por dois caracteres do kanji, sendo o primeiro <span>'Man'</span> que significa composição e o segundo <span>'Ga'</span>, significando imagens.</p>
+            </div>
+            <a href="#section1"><img class="jello-horizontal" src="img/down-arrow.svg" alt="arrowdown"></a>
+        </div>
+
+        <div class="sec3" id="section3">
+            <div class="content3">
                 <h3 class="text-focus-in">Mangá</h3>
                 <p class="text-focus-in">Em japonês, o termo <span>'manga'</span>  se refere a qualquer tipo de desenho, seja ele animado ou em quadrinhos. É composto por dois caracteres do kanji, sendo o primeiro <span>'Man'</span> que significa composição e o segundo <span>'Ga'</span>, significando imagens.</p>
             </div>
@@ -45,3 +53,10 @@
     
 </body>
 </html>
+
+<script>
+    function effecttext() {
+        // document.getElementById('text').className ='text-focus-in';
+        document.getElementById('text').classList.add('sec2');
+    }
+</script>

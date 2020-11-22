@@ -206,9 +206,10 @@ html {
     color: #D9A404;
 }
 /*ANIMATION TEXT FADE UP*/
-.text-focus-in {
+/* .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          
 }
 
 @-webkit-keyframes text-focus-in {
@@ -234,12 +235,12 @@ html {
               filter: blur(0px);
       opacity: 1;
     }
-  }
+  } */
   
 
 /* ACHIEVEMENT/SECRETS*/
 .secret1 {
-    width: 100%;
+    width: 10%;
     height: 180px;
     position: absolute;
     /* background-color: #767676; */
