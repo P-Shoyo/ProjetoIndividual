@@ -20,16 +20,79 @@
         <div class="nav">
             <ul>
                 <li><a href="index.html"> Home</a></li>
-                <li><a href="#"> Sobre</a></li>
-                <li><a href="#"> Contato</a></li>
+                <li><a href="sobre.html"> Sobre</a></li>
                 <li><a href="login.html"> Login</a></li>
-                <li><a href="#"> Cadastro</a> </li>
+                <li><a href="cadastro.html"> Cadastro</a> </li>
                 </ul>            
         </div>        
     </div>
 
-    <div class="showcase">
-        
+    <div class="login-box">
+        <div class="login">
+            <h3>LOGIN</h3>
+            <form id="form_login" method="post" onsubmit="return entrar()">
+                
+    
+                <!-- <h4>Usuário:</h4> -->
+                <i class="fas fa-user"></i><input class="input-padrao" name="login" type="text" placeholder="Usuário"> <br>
+    
+                <!-- <h4>Senha:</h4>  -->
+                <i class="fas fa-lock"></i><input class="input-padrao" name="senha" type="password" placeholder="Senha"> <br><br>
+    
+                <button id="btn_entrar" class="btn">Entrar</button>
+            </form>
+    
+            <p>Não possui conta? <a href="cadastro.html">Cadastre-se agora</a> </p>
+        </div>
     </div>
+    
 </body>
 </html>
+
+<script>
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'sobre.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>

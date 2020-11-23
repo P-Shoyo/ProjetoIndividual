@@ -96,8 +96,86 @@ li {
   }
 
 /* CONTEUDO */
-.showcase{
+.login{
     /* height: 937px; */
     width: 100%;
-    background-color: #767676;
+    /* background-color: #767676; */
+    text-align: center;
+    position: absolute;
+    top: 18%;
+}
+
+.login h3{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.login h4{
+    color: white;
+}
+
+.login p{
+    color: white;
+    font-size: 17px;
+}
+
+.login a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #D9A404;
+}
+
+::placeholder{
+    color: rgb(141, 141, 141);
+}
+input{
+    font-size: 18px;
+    background-color:  #606468;
+    color: white;
+    /* width: 20%; */
+    width: 380px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border: 3px solid #555;
+}
+
+button{
+    /* width: 10%; */
+    width: 200px;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #86A5A9;
+    color: white;
+
+}
+
+.fas{
+    padding-right: 20px;
+    fill: #606468;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    color: rgb(190, 190, 190);    
+}
+
+
+.login-box{
+    background-color: #535353;
+    height: 600px;
+    width: 900px;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    position: absolute;
+    /* top: 50%; */
+    left: 25%;
+    top: 200px;
 }
