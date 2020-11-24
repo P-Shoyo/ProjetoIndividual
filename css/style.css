@@ -162,8 +162,9 @@ li {
     border-radius: 50%;
     position: absolute;
     /* bottom: 30px; */
-    right: 20%;
-    top: 2045px;
+    right: 25%;
+    top: 2020px;
+
 }
 
 .ellipse img{
@@ -175,14 +176,15 @@ li {
 .map{
     color: white;
     text-align: left;
-    padding-left: 50px;
-    padding-top: 20px;
+    padding-left: 90px;
+    padding-top: 50px;
 }
 
 .terms{
     margin: 0;
     position: absolute;
-    left: 50px;
+    left: 280px;
+    top: 2050px;
 }
 
 /* .map h3{
