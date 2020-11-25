@@ -1,92 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proj. Individual | Meu nome aqui</title>
+    <title>MangaBase</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
 </head>
- 
-
 <body>
-    <!--header inicio-->
+    <!-- HEADER -->
     <div class="header">
-        <div class="container">
-            <h1 class="titulo">meu <span class="highlight">projeto</span> individual</h1>
-            <div class="nav">
+        <div class="title-header">
+            <!-- <a href="index.html"> -->
+            <img src="img/logo.png" alt="Logo">
+            <span>MangaBase</span>
+        <!-- </a> -->
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="sobre.html"> Sobre</a></li>
+                <li><a href="login.html"> Login</a></li>
+                <li><a href="cadastro.html"> Cadastro</a> </li>
+                </ul>            
+        </div>        
+    </div>
+
+    <div class="showcase">
+
+    </div>
+
+    <!-- FOOTER -->
+        <div class="footer-top">
+            <div class="map">
+                <h3>Informação</h3>
                 <ul>
-                    <li><a href="" class="current">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="meu_cadastro.html">Cadastro</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <a href="sobre.html"></a><li>Sobre</li>         
+                </ul>
+            <div class="terms">
+                <h3>Políticas</h3>
+                <ul>
+                    <a class="btn" href="#openmodal"><li>Termos</li></a>
+                    <a class="btn2" href="#openmodal2"><li>Privacidade</li></a>
                 </ul>
             </div>
-        </div>
-    </div>
-    <!--header fim-->
+                
+            </div>
 
-    <!--banner inicio-->
-    <div class="banner">
-        <div class="container">
-            <div class="texto">
-                <h1 class="titulo">
-                    Este meu projeto tem um design único...
-                </h1>
-                <h3>
-                    ... assim como eu!
-                </h3>
+            <div class="ellipse">
+                <a href="#Top"><img id="btnTop" onclick="scrollTop()" src="img/footer2.gif" alt="Shoyo Laying and Blinking"></a>
+            </div>
+
+            <div class="ballontop">
+                <p>Quer subir comigo?</p>
             </div>
         </div>
-    </div>
-    <!--banner fim-->
 
-    <!--novidades e-mail inicio-->
-    <div class="novidades">
-        <div class="container">
-            <div class="saber-mais">
-                <h2>Quer saber mais sobre mim?</h2>
-                <a href="sobre.html">
-                    <button type="submit" class="btn-index" >Acessar sobre</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--novidades e-mail fim--> 
-
-    <!-- icones inicio -->
-    <div class="box">
-        <div class="container">
-            <div class="box-item">
-                <img src="img/missao.png">
-                <h3>Missão</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box-item">
-                <img src="img/visao.png">
-                <h3>Visão</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box-item">
-                <img src="img/valores.png">
-                <h3>Valores</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            
-        </div>
-    </div>
-    <!-- icones fim -->
-
-    <!--footer inicio-->
     <div class="footer">
-        <div class="container">
-            <h4>Feito com <i class="far fa-heart"></i> por um aluno BandTec &COPY; 2020</h4>
+        <div class="footer-bottom">
+            <span>© 2020 MangaBase | Made By Shoyo</span> 
+            <a class="git" href="https://github.com/P-Shoyo"><i class="fab fa-github"></i> </a>
+            <a class="link" href=""><i class="fab fa-linkedin"></i></a>
         </div>
+
     </div>
-    <!--footer fim-->
 
-    
 </body>
-
 </html>
+<script>

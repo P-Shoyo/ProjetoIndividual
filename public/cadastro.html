@@ -47,7 +47,7 @@
                     <p>Já possui cadastro? <a href="login.html">Entre na sua conta</a></p>
                 </div>
                 
-                <img src="img/loading.gif" id="img_aguarde" style="display: none;" width="100px">
+                <img src="img/loading.gif" id="img_aguarde" style="display: none;">
     
                 <div id="div_erro" style="background-color: #bf8899; color: maroon; display: none;">
                     Erro no cadastro
@@ -59,7 +59,7 @@
 </html>
 
 <script>5
-     function cadastrar() {
+      function cadastrar() {
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
@@ -95,5 +95,4 @@
         img_aguarde.style.display='none';
         div_erro.style.display='block';
     }
-
 </script>

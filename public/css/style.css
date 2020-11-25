@@ -1,274 +1,228 @@
-body {
-    font-family: consolas, monospace;
-    padding: 0;
-        /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
-    margin: 0;
-        /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
-    background-color: #bf7788;
-    background-image: url(../img/flowers_bg.jpg);
-    background-size: cover;
-    background-position: fixed;
-
-}
-
-.btn-index {
-    color: white;
-    background-color:  #bf7788;
-    border: 0;
-    padding: 10px 20px;
-
-    border-radius: 5px;
-    cursor: pointer;
-
-    font-family: consolas, monospace;
-}
-
-.container { 
-    width: 80%;
-    margin: auto;
-}
-
-h1 {
+/*GLOBAL*/
+body{
+    background-color: #767676;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
-/* CABEÇALHO */
-
-.header {
-        /*overflow: auto; /* cuidado*/
-    height: 100px;
-}
-
-.header .container {
-    height: 80px;
-}
-
-.header .container .highlight {
-    color: #bf7788
-}
-
-.header h1 {
-    margin: 0;
-    padding: 0;
-    float: left;
-        /*ATENÇÃO - VAI SUMIR A NAV*/
-    margin-top: 30px;
-    color: #232323;
-}
-
-.header ul {
-    list-style-type: none;
-        /*ATENÇÃO - NAO É NO NAV*/
-    float: right;
-        /*ATENÇÃO - VAI SUMIR A NAV*/
-    margin-top: 40px;
-}
-
-.header li {
-    float: left;
-        /*ATENÇÃO ORDENE OS ITENS NA MESMA ORDEM QUE ESTÃO NO HTML*/
-    margin-left: 18px;
-        /* FIM*/
-}
-
-.header a {
-    text-transform: uppercase;
-    color: #232323;
-}
-
-.header a:hover {
-    font-weight: bold;
-}
-
-.header .current {
-    color: #bf7788;
-    font-weight: bold;
-}
-
-/* JUMBOTRON 
-    aka BANNER */
-
-/*colocar tudo que está acima em header */
-
-.banner {
-    height: 400px;
+/*HEADER*/
+.header{
+    background-color: #32312F;
+    height: 10%;
     width: 100%;
+    position: absolute;
 }
 
-.banner .container {
-    height: 400px;
+.title-header img{
+    height: 60px;
+    position: absolute;
+    left: 200px;
+    top: 15px;
 }
 
-.banner .texto {
-    color: gray;
-    text-align: center;
-    padding-top: 100px;
-
+.title-header span{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 270px;
+    letter-spacing: 0.15em;
 }
 
-.banner .titulo {
-    font-size: 48px;
-    color:  #bf7788;
-}
-
-/* NOVIDADES */
-
-.novidades {
-    background-color: #232323;
-    overflow:auto;
-}
-
-.novidades .container {
-    padding: 30px 0;
-}
-
-.novidades h2 {
-    color: rgb(216, 216, 216);
-    margin-top: 0;
-    padding-top: 0;
-    font-weight: 400;
-}
-
-.novidades form {
+.nav {
     float: right;
 }
-
-.novidades input {
-    border: 0;
-    height: 35px;
-    width: 250px;
+.nav ul {
+    margin: 0;
 }
-
-.novidades button {
-    background-color:  #bf7788;
-    border: 0;
-    height: 38px;
-    padding: 0 20px;
-}
-
-.saber-mais {
+.nav li{
+    display: inline-block;
+    padding: 20px;
+    padding: 25px 40px 0px 20px;
+    margin-right: 30px;
+    color: white;
     text-align: center;
 }
 
-/* ICONES */
+/* Animation HOVER mouse HEADER  */
 
-.box {
-    overflow: auto;
-    background-color: #F8FCFFbe ;
-}
-
-.box .box-item {
-    float: left;
-    width: 33%;
+ul { 
+    margin: 150px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: inline-block;
     text-align: center;
-    margin: 50px 0;
+  }
+
+li { 
+    /* display: table-cell;  */
+    display: inline-block;
+    position: relative; 
+    padding: 15px 0;
+  }
+
+.nav a {
+    color: #fff;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+.nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #D9A404;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 20px;
+      }
+  }
+
+/* CONTEUDO */
+.showcase{
+    height: 2000px;
+    width: 100%;
+    background-color: #767676;
 }
 
-.box .box-item img {
-    height: 100px;
-}
 
 /* FOOTER */
-
-.footer {
-    background-color:  #bf7788;
-    text-align: center;
-    height: 100px;
-}
-
-.footer h4 {
-    color: white;
-    font-weight: 100;
-    margin: 0;
-    padding-top: 40px;
-}
-
-/* SOBRE - ASSUNTOS */
-
-.assuntos {
-    background-color:#232323;
-    overflow: auto;
-    padding-top: 30px;
-    text-align: center;
-    padding-bottom: 50px; /*aqui oh a diferença entre padding e margin*/
-    color:  #bf7788
-}
-
-.assuntos .assunto {
-    border-bottom: 3px solid #bf7788;
-    background-color: white;
-    padding: 50px 5px;
-    float: left;
-    width: 450px;
-    margin-left: 55px; 
-}
-
-.assuntos h2 {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-.assuntos p {
-    line-height: 1.5;
-}
-
-/* SOBRE - INTEGRANTES */
-
-.nosso-time {
+.footer{
     background-color: #232323;
-    text-align: center;
-    overflow: auto;
-} 
-
-.nosso-time h2 {
-    margin: 0;
-    padding-top: 25px;
-    color: white;
-    text-transform: uppercase;
-}
-
-.nosso-time .integrantes {
-    /* border: 3px solid yellow; */
-    color: white;
-    overflow: auto;
-    margin-top: 30px;
-    padding-bottom: 35px;
-}
-
-
-.nosso-time .integrantes .integrante {
-    /*border: 3px solid cyan;*/
-    width: 180px;
-    float: left;
-    padding: 5px;
-    margin-left: 20px;
-    line-height: 1.5;
-}
-
-.nosso-time .integrante img {
     height: 100px;
-    background-color:  #bf7788;
+    /* padding-top: 30px; */
+    border-top: #D9A404 solid 3px;
+    /* position: absolute; */
+}
+
+
+
+.footer-bottom span{
+    color: white;
+    position: absolute;
+    left: 10%;
+    padding-top: 45px;
+}
+
+.git{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    padding-top: 35px;
+    left: 80%;
+}
+
+.link{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    padding-top: 35px;
+    left: 83%;
+}
+
+
+
+
+.footer a:hover{
+    color: #D9A404;
+}
+  
+.footer-top{
+    background-color: #232323;
+    height: 300px ;
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 100px; */
+    margin: 0;
+    /* border-bottom: #D9A404 solid 3px; */
+}
+
+.ellipse{
+    /* background-color: #767676; */
+    background-color: rgb(224, 224, 224);
+    height: 250px;
+    width: 500px;
     border-radius: 50%;
-    padding: 10px;
+    position: absolute;
+    /* bottom: 30px; */
+    right: 25%;
+    top: 2020px;
+
 }
 
-/* ASSUNTO GRANDE */
-
-.assuntos .assunto-grande {
-    border-bottom: 3px solid  #bf7788;
-    background-color: white;
-    padding: 50px 30px;
-    float: left;
-    /* width: 450px; */
-    margin-left: 55px; 
+.ellipse img{
+    height: 225px;
+    position: absolute;
+    bottom: 15px;
+    left: 65px;
+}
+.map{
+    color: white;
+    text-align: left;
+    padding-left: 190px;
+    padding-top: 50px;
 }
 
-#b_usuario {
-    color: #bf7788
+.terms{
+    margin: 0;
+    position: absolute;
+    left: 400px;
+    top: 2050px;
+}
+
+/* .map h3{
+    margin: 0;
+    position: absolute;
+    left: 50px;
+    padding-top: 50px;
+}
+
+.terms h3{
+    margin: 0;
+    position: absolute;
+    left: 50px;
+    padding-top: 50px;
+} */
+
+.map ul{
+    margin: 0;    
+}
+.map li{
+    display: flex;
+    padding: 0;
+}
+
+.map a{
+    text-decoration: none;
+    color: white;
+}
+
+.map a:hover{
+    color: #D9A404;
+}
+
+.ballontop p{
+    /* color: white; */
+    position: absolute;
+    right: 515px;
+    top: 2075px;
+
+
 }

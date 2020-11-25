@@ -163,3 +163,10 @@ button{
 
 }
   
+
+.formulario img{
+    position: absolute;
+    top: 520px;
+    height: 189px;
+    left: 41%;
+}
