@@ -90,6 +90,7 @@ li {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
+
 .nav a:hover:after { 
     width: 100%; 
     left: 0; 
@@ -105,14 +106,14 @@ li {
 .conteudo{
     position: absolute;
     /* background-color: #32312F; */
-    /* height: 200px; */
+    height: 2000px;
     width: 100%;
     top: 100px;
 }
 
 .conteudo h3{
     /* text-align: center; */
-    color: white;
+    /* color: white; */
     padding-left: 200px;
     padding-top: 50px;
     font-size: 30px;
@@ -121,18 +122,27 @@ li {
 
 .who{
     position: absolute;
-    top: 50px;
-    left: 580px;
+    top: 80px;
+    left: 695px;
     width: 45%;
     /* background-color: #D9A404; */
 }
 
 .who p{
-    color: white;
+    /* color: white; */
     position: absolute;
     left: 200px;
 }
+.who-box{
+    background-color: #D9A404;
+    height: 500px;
+    width: 40%;
+    position: absolute;
+    right: 300px;
+    top: 100px;
+    border: #32312F solid 3px;
 
+}
 
 /*FOTO sobre*/
 
@@ -140,17 +150,102 @@ li {
     background-image: url('img/me_sky.jpg');
     height: 500px;
     position: absolute;
-    left: 190px;
+    left: 290px;;
     top: 100px;
+    border: #32312F solid 3px;
 }
 
 .nosky{
     display: none;
     height: 500px;
     position: absolute;
-    left: 205px;
+    left: 293px;;
     top: 100px;
+    border: #32312F solid 3px;
+    border-right: #32312F solid 15px;
+    border-left: #32312F solid 15px;
 }
+
 .sky:hover + .nosky{
     display: block;
+}
+
+/* whobox2 segundo conteúdo container*/
+.who2{
+    position: absolute;
+    top: 680px;
+    left: 155px;
+    width: 45%;
+    /* background-color: #D9A404; */
+}
+
+.who2 p{
+    /* color: white; */
+    position: absolute;
+    left: 200px;
+}
+.who-box2{
+    background-color: #D9A404;
+    height: 500px;
+    width: 40%;
+    position: absolute;
+    /* right: 300px; */
+    left: 290px;
+    top: 660px;
+    border: #32312F solid 3px;
+}
+
+
+.me{
+    height: 500px;
+    position: absolute;
+    right: 300px;
+    top: 660px;
+    border: #32312F solid 3px;
+}
+
+/* MEMORIUM */
+.who-box3{
+    position: absolute;
+    bottom: 260px;
+    left: 290px;
+    height: 500px;
+    width: 69%;
+    /* background-color: #32312F;
+    border: #000000 solid 3px; */
+}
+
+.who-box3 h3{
+    /* color: rgb(148, 148, 148); */
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    left: 38%;
+    top: 20px;
+}
+
+.who-box3 p{
+    /* color: rgb(148, 148, 148); */
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+.box3 img{
+    height: 480px;
+    /* border-radius: 50%; */
+    border: #D9A404 solid 3px;
+    position: absolute;
+    top: 120px;
+    left: 33%;
+}
+
+.who-box3 span{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 42%;
+    top: 630px;
 }
