@@ -170,3 +170,11 @@ button{
     height: 189px;
     left: 41%;
 }
+
+.fas{
+    padding-right: 20px;
+    fill: #606468;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    color: rgb(190, 190, 190);    
+}

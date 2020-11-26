@@ -34,7 +34,7 @@
 
             <form id="form_login" method="post" onsubmit="return entrar()">    
                 <i class="fas fa-user"></i>
-                <input class="input-padrao" name="login" type="text" placeholder="Usuário"> <br>
+                <input class="input-padrao" name="email" type="text" placeholder="E-mail"> <br>
     
                 <i class="fas fa-lock"></i>
                 <input class="input-padrao" name="senha" type="password" placeholder="Senha"> <br><br>
@@ -67,7 +67,7 @@
 
                 resposta.json().then(json => {
 
-                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.login_usuario_meuapp = json.email;
                     sessionStorage.nome_usuario_meuapp = json.nome;
 
                     window.location.href = 'sobre.html';

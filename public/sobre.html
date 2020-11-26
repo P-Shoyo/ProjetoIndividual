@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
+    <!-- <script type="text/javascript" src="funcoes.js"></script> -->
 </head>
-<body>
+<body onload="verificar_autenticacao()">
     <!-- HEADER -->
     <div class="header">
         <div class="title-header">
@@ -21,21 +22,36 @@
             <ul>
                 <li><a href="index.html"> Home</a></li>
                 <li><a href="sobre.html"> Sobre</a></li>
-                <li><a href="login.html"> Login</a></li>
-                <li><a href="cadastro.html"> Cadastro</a> </li>
+                <!-- <li><a href="login.html"> Login</a></li>
+                <li><a href="cadastro.html"> Cadastro</a> </li> -->
+                <li>Olá, <b id="b_usuario"></b></li>
+                <li><a href="" onclick="logoff()">Logout</a></li>
                 </ul>            
         </div>        
     </div>
 
     <!-- Conteúdo -->
     <div class="conteudo">
-        <div class="who">
-            <h3>Olá!</h3>
-            <p></p>
-
+        <div class="picture">
+            <img class="sky" src="img/me_sky.jpg" alt="Foto com o céu">
+            <img class="nosky" src="img/me.jpg" alt="">
         </div>
+
+        <div class="who">
+            <h3>Priscila Choi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sunt obcaecati voluptates atque eaque qui placeat. Unde nemo officia illum quas velit culpa corporis saepe asperiores labore, aut tempora nobis?</p>
+        </div>
+
 
     </div>
     
 </body>
 </html>
+<!-- 
+<script>
+    let usuario;
+
+    verificar_autenticacao();
+
+    
+</script> -->

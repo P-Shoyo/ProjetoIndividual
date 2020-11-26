@@ -33,10 +33,13 @@
             <div class="formulario">
                 <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                     <!-- <label for="nome">Nome e sobrenome</label> -->
+                        <i class="fas fa-user"></i>
                         <input type="text" name="nome" class="input-padrao" autofocus="autofocus" placeholder="Nome Completo"  required minlength="4"><br>
                     <!-- <label for="login">Login</label>  -->
-                        <input type="text" name="login" class="input-padrao" placeholder="Usuário para login"  required minlength="4"><br>
+                        <i class="fas fa-at"></i>
+                        <input type="text" name="email" class="input-padrao" placeholder="E-mail"  required minlength="4"><br>
                     <!-- <label for="senha">Senha</label> -->
+                        <i class="fas fa-lock"></i>
                         <input type="password" name="senha" class="input-padrao" placeholder="Senha"  required minlength="4"> <br>
                     
                     <button value="Cadastrar" class="btn" id="btn_entrar">Cadastre-se</button>

@@ -117,3 +117,40 @@ li {
     padding-top: 50px;
     font-size: 30px;
 }
+
+
+.who{
+    position: absolute;
+    top: 50px;
+    left: 580px;
+    width: 45%;
+    /* background-color: #D9A404; */
+}
+
+.who p{
+    color: white;
+    position: absolute;
+    left: 200px;
+}
+
+
+/*FOTO sobre*/
+
+.sky{
+    background-image: url('img/me_sky.jpg');
+    height: 500px;
+    position: absolute;
+    left: 190px;
+    top: 100px;
+}
+
+.nosky{
+    display: none;
+    height: 500px;
+    position: absolute;
+    left: 205px;
+    top: 100px;
+}
+.sky:hover + .nosky{
+    display: block;
+}
