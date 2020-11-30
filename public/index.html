@@ -3,69 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangaBase</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
+    <title>Início</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Library CSS Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS FONTAWESOME -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">    
+    <!-- SWEET ALERT LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
     <!-- HEADER -->
-    <div class="header">
+    <!-- <div class="header"> -->
         <div class="title-header">
-            <!-- <a href="index.html"> -->
-            <img src="img/logo.png" alt="Logo">
-            <span>MangaBase</span>
-        <!-- </a> -->
+            <a href="index.html">
+            <img src="img/logo_sc.png" alt="Logo">
+            <span>Shoyo's Comics</span></a>
         </div>
-        <div class="nav">
-            <ul>
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="sobre.html"> Sobre</a></li>
-                <li><a href="login.html"> Login</a></li>
-                <li><a href="cadastro.html"> Cadastro</a> </li>
-                </ul>            
-        </div>        
-    </div>
 
-    <div class="showcase">
-
-    </div>
-
-    <!-- FOOTER -->
-        <div class="footer-top">
-            <div class="map">
-                <h3>Informação</h3>
-                <ul>
-                    <a href="sobre.html"></a><li>Sobre</li>         
-                </ul>
-            <div class="terms">
-                <h3>Políticas</h3>
-                <ul>
-                    <a class="btn" href="#openmodal"><li>Termos</li></a>
-                    <a class="btn2" href="#openmodal2"><li>Privacidade</li></a>
-                </ul>
+        <div class="sec1" id="section1">
+            <div class="content">
+                <h1>Bem-Vindo!</h1>
+                <div class="ellipse roll-in-left"></div>
+                <img class="roll-in-left" src="img/welcome.png" alt="Hello from Shoyo!">
             </div>
+
+            
+            <a href="#section2"><img class="jello-horizontal" src="img/down-arrow.svg" alt="arrowdown"></a>
+        </div>
+
+        <div class="sec2" id="section2">
+            <div class="content2">
+                <h3 id="text">Mangá</h3>
+                <p>O termo vem do japonês <span>'manga'</span> que se refere a qualquer tipo de desenho, seja ele animado ou em quadrinhos. É composto por dois caracteres do kanji, sendo o primeiro <span>'Man'</span> que significa composição e o segundo <span>'Ga'</span>, significando imagens. <br>
+                Assim são denominados as histórias em quadrinho de estilo japonês no ocidente.</p>
+            </div>
+            <a href="#section3"><img class="jello-horizontal" src="img/down-arrow.svg" alt="arrowdown"></a>
+        </div>
+
+        <div class="sec3" id="section3">
+            <div class="content3">
+                <h3>O que você encontra aqui?</h3> 
+                <p> Pela influência de mangás e quadrinhos, criei este site com a intenção de mostrar histórias curtas do dia-a-dia nesse formato.<br><br>
+                Espero que gostem das histórias! <br><br>
+                <span> Boa leitura!</span>
+                </p>
                 
             </div>
+            <!-- <a href="#section1"><img id="arrow3" class="jello-horizontal" src="img/down-arrow.svg" alt="arrowdown"></a> -->
+            <a href="quadrinhos.html"><button class="btn"> Começar a Ler!</button></a>
 
-            <div class="ellipse">
-                <a href="#Top"><img id="btnTop" onclick="scrollTop()" src="img/footer2.gif" alt="Shoyo Laying and Blinking"></a>
+            <div id="secret1" onclick="secret1()" class="secret1">
+                
+                <img src="img/me dog.png" alt="">
             </div>
-
-            <div class="ballontop">
-                <p>Quer subir comigo?</p>
-            </div>
-        </div>
-
-    <div class="footer">
-        <div class="footer-bottom">
-            <span>© 2020 MangaBase | Made By Shoyo</span> 
-            <a class="git" href="https://github.com/P-Shoyo"><i class="fab fa-github"></i> </a>
-            <a class="link" href=""><i class="fab fa-linkedin"></i></a>
-        </div>
-
-    </div>
-
+        </div>    
 </body>
 </html>
+
 <script>
+
+    var secrets = [];
+    var contador = 0;
+    function secret1() {
+        contador ++;
+        Swal.fire({
+        title: `Você encontrou ${contador} dos 5 segredos! Consegue achar os outros?`,
+        width: 600,
+        padding: '3em'})
+    }
+ 
+    
+</script>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangaBase</title>
+    <title>Manga S</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
@@ -13,13 +13,14 @@
     <div class="header">
         <div class="title-header">
             <!-- <a href="index.html"> -->
-            <img src="img/logo.png" alt="Logo">
-            <span>MangaBase</span>
+            <img src="img/logo_sc.png" alt="Logo">
+            <span>Shoyo's Comics</span>
         <!-- </a> -->
         </div>
         <div class="nav">
             <ul>
                 <li><a href="index.html"> Home</a></li>
+                <li><a href="quadrinhos.html"> Quadrinhos</a></li>
                 <li><a href="sobre.html"> Sobre</a></li>
                 <li><a href="login.html"> Login</a></li>
                 <li><a href="cadastro.html"> Cadastro</a> </li>
@@ -34,7 +35,7 @@
     <!-- FOOTER -->
         <div class="footer-top">
             <div class="map">
-                <h3>Informação</h3>
+                <h3>Mapa do Site</h3>
                 <ul>
                     <a href="sobre.html"></a><li>Sobre</li>         
                 </ul>
@@ -49,11 +50,15 @@
             </div>
 
             <div class="ellipse">
-                <img src="img/footer2.png" alt="">
+                <a href="#Top"><img id="btnTop" onclick="scrollTop()" src="img/footer2.gif" alt="Shoyo Laying and Blinking"></a>
+            </div>
+
+            <div class="ballontop">
+                <p>Quer subir comigo?</p>
             </div>
         </div>
-    <div class="footer">
 
+    <div class="footer">
         <div class="footer-bottom">
             <span>© 2020 MangaBase | Made By Shoyo</span> 
             <a class="git" href="https://github.com/P-Shoyo"><i class="fab fa-github"></i> </a>
@@ -64,3 +69,4 @@
 
 </body>
 </html>
+<script>

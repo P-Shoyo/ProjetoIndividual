@@ -13,13 +13,14 @@
     <div class="header">
         <div class="title-header">
             <!-- <a href="index.html"> -->
-            <img src="img/logo.png" alt="Logo">
-            <span>MangaBase</span>
+            <img src="img/logo_sc.png" alt="Logo">
+            <span>Shoyo's Comics</span>
         <!-- </a> -->
         </div>
         <div class="nav">
             <ul>
                 <li><a href="index.html"> Home</a></li>
+                <li><a href="quadrinhos.html"> Quadrinhos</a></li>
                 <li><a href="sobre.html"> Sobre</a></li>
                 <li><a href="login.html"> Login</a></li>
                 <li><a href="cadastro.html"> Cadastro</a> </li>
@@ -32,13 +33,10 @@
            <h1>CADASTRO</h1>
             <div class="formulario">
                 <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-                    <!-- <label for="nome">Nome e sobrenome</label> -->
                         <i class="fas fa-user"></i>
                         <input type="text" name="nome" class="input-padrao" autofocus="autofocus" placeholder="Nome Completo"  required minlength="4"><br>
-                    <!-- <label for="login">Login</label>  -->
                         <i class="fas fa-at"></i>
                         <input type="text" name="email" class="input-padrao" placeholder="E-mail"  required minlength="4"><br>
-                    <!-- <label for="senha">Senha</label> -->
                         <i class="fas fa-lock"></i>
                         <input type="password" name="senha" class="input-padrao" placeholder="Senha"  required minlength="4"> <br>
                     
@@ -61,7 +59,7 @@
 </body>
 </html>
 
-<script>5
+<script>
       function cadastrar() {
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
