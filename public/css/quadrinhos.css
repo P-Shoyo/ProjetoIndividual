@@ -332,3 +332,14 @@ footer{
     display: block;
     color: white;
 }
+
+.box-comic img{
+    height: 800px;
+}
+
+#arrowleft {
+    font-size: 80px;
+    position: absolute;
+    bottom: 0;
+
+}

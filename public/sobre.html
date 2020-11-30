@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangaBase</title>
+    <title>Shoyo's Comics</title>
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
@@ -58,7 +58,8 @@
         <div class="card4">
             <!-- <h3>Card4</h3>
             <p>content</p> -->
-            <img id="animate" onclick="clickme()" class="drawing" src="img/tobi2.png" alt="">
+            <!-- <img id="animate" onclick="clickme()" class="drawing" src="img/tobi2.png" alt=""> -->
+            <img id="animate" onclick="clickme()" class="drawing" src="img/eu_heart.png" alt="">
             <img id="pic2" src="img/me.jpg" alt="">
         </div>
 
@@ -125,17 +126,14 @@
         // place image at corner of card2 and make it move right and left of card2
         var elem = document.getElementById("animate");   
         var pos = 50;
-        var id = setInterval(frame, 5);
+        var id = setInterval(frame, 1);
         function frame() {
             if (pos == 350) {
                 clearInterval(id);
-                // alert('You found me!')
-                // make box with text that shows the screen: 'Hey, psiu! Estou aqui embaixo!'
-            } else if (pos == 340) {
-                elem.style.right = (pos-10) + "px"; 
             } else {
                 pos++; 
                 // elem.style.top = pos * 3 + "px"; 
+                animate.src = 'img/effective.png'
                 elem.style.left = (pos-10) + "px"; 
             }
         }
@@ -144,7 +142,7 @@
     function shoyo() {
         //when click on Shoyo, display an img at corner of box that says:
         // reveals face thats hiding with the blanket
-        pic2.src = '/img/me_mous.jpg';
+        pic2.src = 'img/me3.jpg';
         pic2.style = 'margin-right: 70px';
     }
 </script>
