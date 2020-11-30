@@ -1,9 +1,9 @@
-# Projeto Individual - MangaBase
+# Projeto Individual - Shoyo's Comics
 > Projeto Individual com base nos conhecimentos adquiridos durante o curso de Análise e Desenvolvimento de Sistemas - BandTec
 
 
 ## Conteúdo
-**EM ANDAMENTO**
+Criação de um site para a postagem de quadrinhos de autoria própria.
 
 
 
@@ -18,4 +18,4 @@ To my dog, the love of my life ♥
 
 ---
 **Welcome to my Project!!**
-![image](https://raw.githubusercontent.com/P-Shoyo/ProjetoIndividual/main/img/footer2.gif)
+![image](https://raw.githubusercontent.com/P-Shoyo/ProjetoIndividual/main/public/img/footer2.gif?token=AO4OM3D7TIKZ2IH5CAOXPXS7YURCS)
