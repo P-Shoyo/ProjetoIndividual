@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/quadrinhos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
-    <!-- <script type="text/javascript" src="funcoes.js"></script> -->
     <!-- SWEET ALERT LINK-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
-<body onload="verificar_autenticacao()">
+<body>
+<!-- <body onload="verificar_autenticacao()"> -->
     <!-- HEADER -->
     <div class="header">
         <div class="title-header">
@@ -24,8 +24,8 @@
                 <li><a href="index.html"> Home</a></li>
                 <li><a href="quadrinhos.html"> Quadrinhos</a></li>
                 <li><a href="sobre.html"> Sobre</a></li>
-                <li>Olá, <b id="b_usuario"></b></li>
-                <li><a href="" onclick="logoff()">Logout</a></li>
+                <li><a href="login.html"> Login</a></li>
+                <li><a href="cadastro.html"> Cadastro</a> </li>
                 </ul>            
         </div>        
     </div>
@@ -35,22 +35,26 @@
         <div class="box">
             <div class="box-content">
                 <h3>Segredos</h3>
-                <p>A página tem 5 segredos, você consegue encontrar todos?</p>
-                <div class="secret1"><img id="secret1" src="" alt=""></div>
-                <div class="secret2"><img id="secret2" src="" alt=""></div>
-                <div class="secret3"><img id="secret3" src="" alt=""></div>
-                <div class="secret4"><img id="secret4" src="" alt=""></div>
-                <div class="secret5"><img id="secret5" src="" alt=""></div>
+                <p>A página tem 3 segredos, você consegue encontrar todos?</p>
+                <div class="secret1"><img id="secret1" src="img/glasses.png" onclick="easteregg()"></div>
+                <div class="secret2"><img id="secret2" src="img/glasses.png" onclick="easteregg()"></div>
+                <div class="secret3"><img id="secret3" src="img/glasses.png" onclick="easteregg()"></div>
+                <!-- <div class="secret4"><img id="secret4" src="img/glasses.png" onclick="easteregg()"></div>
+                <div class="secret5"><img id="secret5" src="img/glasses.png" onclick="easteregg()"></div> -->
             </div>
+            <img id="secret5_1" src="img/hello.png" alt="Olá!" onclick="secret()" style="display: none;">
+            <img id="secret5_2" src="img/hello2.png" alt="Olá!" onclick="secret()" style="display: block;">
         </div>
 
         <div class="box-comic">
+            <img id="tobi_me" src="img/tobi_me.png" onclick="secret()">
             <h1>Quadrinhos</h1>
-            <i id="arrowleft" class="fas fa-chevron-left"></i>
-            <img src="img/comic1.png" alt="">
+            <i id="arrowleft" class="fas fa-chevron-left" onclick="left()"></i>
+            <img id="comic" src="img/comic1.png" alt="">
             <!-- <img src="img/comics2.png" alt=""> -->
             <!-- <img src="img/comics3.png" alt=""> -->
-            <i class="fas fa-chevron-right"></i>
+            <i id="arrowright" class="fas fa-chevron-right" onclick="right()"></i>
+
         </div>
 
     </section>
@@ -58,6 +62,7 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer-top">
+            <img id="sorry" src="img/sorry.png" onclick="secret()">
             <div class="map">
                 <h3>Mapa do Site</h3>
                 <ul>
@@ -96,6 +101,64 @@
 </html>
 
 <script>
+
+    // var easter = ['img/hello2.png', 'img/sorry.png', 'img/tobi_me.png']
+    var contador = 0;
+    function secret() {
+        contador += 1;
+        secret5_1.style = 'display: block;';
+        secret5_2.style = 'display: none;';
+
+        if (contador == 1) {
+            secret1.src = 'img/hello2.png'
+            Swal.fire({
+            title: `Você encontrou o segredo 1 de 3! Consegue achar os outros?`,
+            width: 600,
+            padding: '3em'});
+        } else if (contador == 2) {
+            secret2.src = 'img/tobi_me.png';
+            tobi_me.style = 'opacity: 1'
+            // secret2.style = 'opacity: 1;';
+            Swal.fire({
+            title: `Você encontrou o segredo 2 de 3! Consegue achar os outros?`,
+            width: 600,
+            padding: '3em'});
+        } else if (contador == 3) {
+            secret3.src = 'img/sorry.png';
+            sorry.style = 'bottom: 0px';
+            Swal.fire({
+            title: `Você encontrou o segredo 3 de 3! Parabéns!`,
+            width: 600,
+            padding: '3em'});
+        }
+    }
+    
+    var comics = ['img/comic1.png', 'img/comics2.png', 'img/comics3.png'];
+    var comicAtual = 0;
+    var comicFinal = comics.length-1;
+
+    function right() {
+        // contador++;
+        if (comicAtual == comicFinal) {
+            comicAtual = 0;
+            comic.src = comics[comicAtual];
+        } else{
+            comicAtual++;
+            comic.src = comics[comicAtual];
+        }
+    }
+
+    function left() {
+        // contador++;
+        if (comicAtual == comicFinal) {
+            comicAtual--;
+            comic.src = comics[comicAtual];
+        } else{
+            comicAtual=0;
+            comic.src = comics[comicAtual];
+        }
+    }
+   
     function modalterms() {
         Swal.fire({
             title: `Termos`,

@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangaBase</title>
+    <title>Shoyo's Comics</title>
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+    <!-- SWEET ALERT LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -53,13 +56,22 @@
                 <div id="div_erro" style="background-color: #bf8899; color: maroon; display: none;">
                     Erro no cadastro
                 </div>
+                <img id="secret31" src="img/eu_nar2.png" alt="Shoyo Naruto" onclick="secret3()" style="display: block;">
+                <img id="secret32" src="img/eu_nar.png" alt="Shoyo Naruto" onclick="secret3()" style="display: none;">
             </div>
         </div>
     </div>
+    
 </body>
 </html>
 
 <script>
+    function secret3() {
+        // secret3.style.transform = 'translate(100px)';
+        secret32.style = 'display: block';
+        secret31.style = 'display:none;'
+    }
+    
       function cadastrar() {
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));

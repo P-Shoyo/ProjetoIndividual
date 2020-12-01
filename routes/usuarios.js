@@ -56,7 +56,7 @@ router.post('/cadastrar', function(req, res, next) {
 
 /* Verificação de usuário */
 router.get('/sessao/:login', function(req, res, next) {
-	let login = req.params.login;
+	let login = req.params.email;
 	console.log(`Verificando se o usuário ${login} tem sessão`);
 	
 	let tem_sessao = false;

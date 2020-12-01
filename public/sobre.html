@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
-    <!-- <script type="text/javascript" src="funcoes.js"></script> -->
+    <script type="text/javascript" src="funcoes.js"></script>
+
+    <!-- SWEET ALERT LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body onload="verificar_autenticacao()">
@@ -67,12 +70,13 @@
             <h1>In Memorium</h1>
             <h1>Tobi</h1>
             <p>2009 - 2020</p>
-            <img id="pic4" src="img/tobi.jpg" alt="">
+            <img id="pic4" src="img/tobi.jpg">
             <img id="pic4" src="img/tobi1.jpg" alt="Tobi Piscando">
-            <img id="pic4" src="img/tobi4.jpg" alt="">
-            <img class="zoom" id="pic4" src="img/tobi5.jpg" alt="">
-            <img id="pic4" src="img/tobi_me.jpg" alt="">
-            <img id="gif" src="img/heart.gif" alt="Gif Coração">
+            <img id="secret2" src="img/secret2.png" onclick="secret()">
+            <img id="pic4" src="img/tobi4.jpg">
+            <img class="zoom" id="pic4" src="img/tobi5.jpg">
+            <img id="pic4" src="img/tobi_me.jpg">
+            <img id="gif" src="img/heart.gif">
             <h3><i>"You gave me the happiest years of my life."</i></h3>
         </div>
     </section>
@@ -117,9 +121,13 @@
 </html>
 
 <script>
-    // function clickme() {
-        
-    // }
+    function secret() {
+        Swal.fire({
+        title: `Prestando atenção na aula, hein!`,
+        imageUrl: 'img/tobi6.jpg',
+        width: 600,
+        padding: '3em'});
+    }
 
     function clickme() {
         // animation effect, move from point X to Z

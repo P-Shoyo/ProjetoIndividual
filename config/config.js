@@ -1,7 +1,7 @@
 module.exports = {
   production: {
     username: 'MangaBase',
-    password: '',
+    password: '#Gf35356459807',
     database: 'MangaBase',
     host: 'mangabase.database.windows.net',
     dialect: 'mssql',

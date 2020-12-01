@@ -289,7 +289,14 @@ section{
     right: 290px;
     padding-top: 10px;
 }
-/*ANIMATION*/
+/*SECRETS*/
+#secret2{
+    height: 100px;
+    position: absolute;
+    left: 40%;
+}
+
+
 
 
 /* FOOTER */

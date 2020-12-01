@@ -95,9 +95,7 @@ li {
       }
   }
 
-
 /*CADASTRO CONTEUDO*/
-
 .cadastro{
     /* /* width: 100%; */
     text-align: center;
@@ -111,6 +109,7 @@ li {
     left: 25%;
     top: 200px;
     color: white;
+    
 }
 
 .cadastro h1{
@@ -178,3 +177,29 @@ button{
     vertical-align: middle;
     color: rgb(190, 190, 190);    
 }
+
+/* SECRET */
+#secret32{
+    height: 200px;
+    transform: rotateZ(270deg);
+    position: absolute;
+    /* position: relative; */
+    left: -16.4%;
+    top: 224px;
+    
+}
+
+#secret31{
+    height: 67px;
+    transform: rotateZ(270deg);
+    position: absolute;
+    /* position: relative; */
+    left: -10.4%;
+    top: 292px;
+    
+}
+
+/* #secret3:hover{
+    transform: translate(100px);
+} */
+

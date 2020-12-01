@@ -5,7 +5,10 @@ body{
     margin: 0;
     padding: 0;
 }
+html{
+    overflow: hidden;
 
+}
 /*HEADER*/
 .header{
     background-color: #32312F;
@@ -186,3 +189,15 @@ button{
     height: 189px;
     left: 41%;
 }
+
+#secretTobi{
+    height: 100px;
+    /* padding-top: 20px; */
+    /* transform: scaleY(-1); */
+    position: absolute;
+    bottom: -70px;
+}
+
+/* #secretTobi:hover{
+    transform: translateY(10)
+} */

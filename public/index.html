@@ -53,9 +53,9 @@
             <!-- <a href="#section1"><img id="arrow3" class="jello-horizontal" src="img/down-arrow.svg" alt="arrowdown"></a> -->
             <a href="quadrinhos.html"><button class="btn"> Começar a Ler!</button></a>
 
-            <div id="secret1" onclick="secret1()" class="secret1">
+            <div  class="secret1">
                 
-                <img src="img/me dog.png" alt="">
+                <img onclick="secret1()" id="secret1" src="img/me dog.png" alt="">
             </div>
         </div>    
 </body>
@@ -63,14 +63,11 @@
 
 <script>
 
-    var secrets = [];
-    var contador = 0;
     function secret1() {
-        contador ++;
         Swal.fire({
-        title: `Você encontrou ${contador} dos 5 segredos! Consegue achar os outros?`,
+        title: `Você me achou!`,
         width: 600,
-        padding: '3em'})
+        padding: '3em'});
     }
  
     

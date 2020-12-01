@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
+    <!-- SWEET ALERT LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> 
+    <script type="text/javascript" src="funcoes.js"></script> 
 </head>
 <body>
     <!-- HEADER -->
@@ -48,14 +51,29 @@
             <div class="extra">
                 <div id="div_erro" class="msg_erro"></div>
                 <img src="img/loading.gif" id="img_aguarde" style="display: none;">
-            </div>            
+            </div>
+            
+            
         </div>
     </div>
+
+    <img id="secretTobi" src="img/secret3.png" alt="Tobi with Scarf" onclick="secretT()">
     
 </body>
 </html>
 
 <script>
+
+    function secretT() {
+        secretTobi.style = 'bottom: 0px';
+        Swal.fire({
+        title: `Woof!`,
+        imageUrl: 'img/tobi_blue.jpg',
+        width: 600,
+        padding: '3em'});
+    }
+
+
     function entrar() {
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_login));
@@ -90,14 +108,18 @@
 
     function aguardar() {
         btn_entrar.disabled = true;
-        img_aguarde.style.visibility = 'visible';
-        div_erro.style.visibility = 'hidden';
+        // img_aguarde.style.visibility = 'visible';
+        // div_erro.style.visibility = 'hidden';
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
     }
 
     function finalizar_aguardar(resposta) {
         btn_entrar.disabled = false;
-        img_aguarde.style.visibility = 'hidden';
-        div_erro.style.visibility = 'visible';
+        // img_aguarde.style.visibility = 'hidden';
+        // div_erro.style.visibility = 'visible';
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
         div_erro.innerHTML = resposta;
     }
 
