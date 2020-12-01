@@ -18,4 +18,4 @@ To my dog, the love of my life ♥
 
 ---
 **Welcome to my Project!!**
-![image](https://raw.githubusercontent.com/P-Shoyo/ProjetoIndividual/main/public/img/footer2.gif?token=AO4OM3D7TIKZ2IH5CAOXPXS7YURCS)
+![image](https://github.com/P-Shoyo/ProjetoIndividual/blob/main/public/img/footer2.gif)
