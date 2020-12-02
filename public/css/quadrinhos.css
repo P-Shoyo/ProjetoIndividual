@@ -416,3 +416,18 @@ footer{
     right: 2%;
     opacity: 0.2;
 }
+
+
+.btn{
+    width: 200px;
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /* box-sizing: border-box; */
+    background-color: #D9A404;
+    color: white;
+    position: absolute;
+    top: 180px;
+    
+    
+}

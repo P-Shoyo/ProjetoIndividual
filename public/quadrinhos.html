@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shoyo's Comics</title>
     <link rel="stylesheet" href="css/quadrinhos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">  
@@ -41,6 +41,7 @@
                 <div class="secret3"><img id="secret3" src="img/glasses.png" onclick="easteregg()"></div>
                 <!-- <div class="secret4"><img id="secret4" src="img/glasses.png" onclick="easteregg()"></div>
                 <div class="secret5"><img id="secret5" src="img/glasses.png" onclick="easteregg()"></div> -->
+                <button id="btn" class="btn" style="display: none;" onclick="surprise()">Clique aqui para uma surpresa</button>
             </div>
             <img id="secret5_1" src="img/hello.png" alt="Olá!" onclick="secret()" style="display: none;">
             <img id="secret5_2" src="img/hello2.png" alt="Olá!" onclick="secret()" style="display: block;">
@@ -74,8 +75,8 @@
             <div class="terms">
                 <h3>Políticas</h3>
                 <ul>
-                    <a class="btn" href="#" onclick="modalterms()"><li>Termos</li></a>
-                    <a class="btn2" href="#" onclick="modalpriv()"><li>Privacidade</li></a>
+                    <a onclick="modalterms()"><li>Termos</li></a>
+                    <a onclick="modalpriv()"><li>Privacidade</li></a>
                 </ul>
             </div>
                 
@@ -130,9 +131,20 @@
             title: `Você encontrou o segredo 3 de 3! Parabéns!`,
             width: 600,
             padding: '3em'});
+            btn.style = 'display: block';
         }
     }
-    
+
+    // var pics = ['img/me4.jpg', 'img/tobi7.jpg'];
+    function surprise() {
+        // var random = Math.floor(Math.random() * 2 +1);
+        Swal.fire({
+            imageUrl: 'img/tobi7.jpg',
+            width: 600,
+            padding: '3em'});
+    }
+
+
     var comics = ['img/comic1.png', 'img/comics2.png', 'img/comics3.png'];
     var comicAtual = 0;
     var comicFinal = comics.length-1;
